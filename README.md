@@ -8,7 +8,7 @@
 
 1.3. [x] [SQL и транзакции](03_sql)
 
-1.4. [ ] [JavaScript](04_js)
+1.4. [x] [JavaScript](04_js)
 
 ## Блок 2. Security Risks
 
