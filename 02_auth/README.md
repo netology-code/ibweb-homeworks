@@ -25,7 +25,7 @@ openssl genrsa -aes256 -out ca.key 4096
 2\. Создадим CA Certificate:
 
 ```shell
-openssl req -new -x509 -sha256 -days 4096 -key ca.key -out xca.crt \
+openssl req -new -x509 -sha256 -days 4096 -key ca.key -out ca.crt \
 -subj "/C=RU/ST=Moscow/L=Moscow/O=Netology/OU=Security/CN=netology.local"
 ```
 
