@@ -12,7 +12,7 @@
 
 ## Блок 2. Security Risks
 
-2.1. [ ] [OWASP Web](05_owasp)
+2.1. [x] [OWASP Web](05_owasp)
 
 2.2. [ ] [OWASP Web](06_owasp)
 
