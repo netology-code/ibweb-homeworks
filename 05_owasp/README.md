@@ -58,7 +58,7 @@ services:
 1. Ваши предположения о том, почему удалось войти именно под этим пользователем
 1. Информацию о том, где хранится аутентификационная информация, что она из себя представляет и как передаётся в каждом запросе
 
-## robots.txt
+## Задание robots.txt
 
 Прочитайте информацию о файле [`robots.txt`](https://developers.google.com/search/docs/advanced/robots/intro?hl=ru) и [детальное его описание](https://developers.google.com/search/docs/advanced/robots/robots_txt?hl=ru).
 
