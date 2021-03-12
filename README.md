@@ -14,7 +14,7 @@
 
 2.1. [x] [OWASP Web](05_owasp)
 
-2.2. [ ] [OWASP Web](06_owasp)
+2.2. [x] [OWASP Web](06_owasp)
 
 2.3. [ ] [OWASP Web](07_owasp)
 
