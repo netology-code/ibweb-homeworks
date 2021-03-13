@@ -16,7 +16,7 @@
 
 2.2. [x] [OWASP Web](06_owasp)
 
-2.3. [ ] [OWASP Web](07_owasp)
+2.3. [x] OWASP Web (ДЗ не предусмотрено)
 
-2.4. [ ] [OWASP Mobile](08_owasp)
+2.4. [x] OWASP Mobile (ДЗ не предусмотрено)
 
