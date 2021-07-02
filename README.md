@@ -18,5 +18,5 @@
 
 2.3. [x] OWASP Web (ДЗ не предусмотрено)
 
-2.4. [x] OWASP Mobile (ДЗ не предусмотрено)
+2.4. [x] [OWASP Mobile*](08_owasp_mobile)
 
