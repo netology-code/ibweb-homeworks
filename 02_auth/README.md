@@ -57,7 +57,7 @@ openssl req -in server.csr -text -verify -noout
 openssl x509 -req -sha256 -days 4096 -in server.csr -CA ca.crt -CAkey ca.key -set_serial 01 -out server.crt -extfile <(printf "subjectAltName=DNS:netology.local")
 ```
 
-7\. Создайте ключ и запрос на подпись сертификата для клиента. Нужно сделать для каждого клиента.
+7\. Создайте ключ и запрос на подпись сертификата для каждого клиента. 
 
 ```shell
 openssl genrsa -aes256 -out client.key 4096
