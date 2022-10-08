@@ -4,7 +4,7 @@
 
 ## Общая вводная
 
-Вы рассмотрите проект [OWASP Juice Shop](https://owasp.org/www-project-juice-shop/), входящий в [Vulnerable Web Application Directory](https://owasp.org/www-project-vulnerable-web-applications-directory/).
+Вы рассмотрите проект [OWASP Juice Shop](https://owasp.org/www-project-juice-shop/), входящий в [Vulnerable Web Applications Directory](https://owasp.org/www-project-vulnerable-web-applications-directory/).
 
 Для запуска иcпользуйте `docker-compose.yml`:
 
