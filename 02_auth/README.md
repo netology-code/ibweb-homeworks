@@ -173,7 +173,7 @@ http {
 
 ![](pic/02.png)
 
-3\. Перейдите на вкладку Authorities, найдите org-Netology и выберите пункт меню Edit.
+3\. Перейдите на вкладку Authorities, найдите org-Netology и выберите в меню пункт Edit.
 
 ![](pic/03.png)
 
