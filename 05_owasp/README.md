@@ -88,7 +88,7 @@ services:
 
 2. Введите почту администратора и случайный пароль. Получите запрос для аутентификации.
 
-3. Отправьте запрос в Intruder ([Burp](https://portswigger.net/burp/documentation/desktop/tools/intruder)) или «Запуск Фаззинга»(ZAP). Выберите в качестве перебираемого параметра пароль. В качестве списка рекомендуется использовать [списки с самыми популярными паролями](https://github.com/danielmiessler/SecLists/blob/master/Passwords/Common-Credentials/100k-most-used-passwords-NCSC.txt).
+3. Отправьте запрос в Intruder ([Burp](https://portswigger.net/burp/documentation/desktop/tools/intruder)) или «Запуск Фаззинга» (ZAP). Выберите в качестве перебираемого параметра пароль. В качестве списка используйте [списки с самыми популярными паролями](https://github.com/danielmiessler/SecLists/blob/master/Passwords/Common-Credentials/100k-most-used-passwords-NCSC.txt).
 Запустите перебор, найдите искомый пароль.
 
 ### Решение задания
