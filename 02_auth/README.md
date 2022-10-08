@@ -165,7 +165,7 @@ http {
 127.0.0.1 netology.local
 ```
 
-1\. В адресной строке Google Chrome вбейте адрес [chrome://settings/certificates], и вы попадёте на страницу, как на скрине.
+1\. В адресной строке Google Chrome вбейте адрес `chrome://settings/certificates`, и вы попадёте на страницу, как на скрине.
 
 ![](pic/01.png)
 
