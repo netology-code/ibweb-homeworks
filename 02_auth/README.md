@@ -51,7 +51,7 @@ openssl req -new -key server.key -out server.csr \
 openssl req -in server.csr -text -verify -noout
 ```
 
-6\. Подпишите запрос и выдйате сертификат серверу.
+6\. Подпишите запрос и выдайте сертификат серверу.
 
 ```shell
 openssl x509 -req -sha256 -days 4096 -in server.csr -CA ca.crt -CAkey ca.key -set_serial 01 -out server.crt -extfile <(printf "subjectAltName=DNS:netology.local")
