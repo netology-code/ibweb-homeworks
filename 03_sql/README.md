@@ -11,9 +11,9 @@
 * [`docker-entrypoint-initdb.d/init.sql`](./assets/docker-entrypoint-initdb.d/init.sql).
 
 После скачивания структура на вашем диске должна иметь вид:
-* файл `docker-compose.yml`
-* каталог `docker-entrypoint-initdb.d`
-    * файл `init.sql`
+* файл `docker-compose.yml`;
+* каталог `docker-entrypoint-initdb.d`;
+    * файл `init.sql`.
     
 Для запуска используйте команду `docker-compose up`.
 
