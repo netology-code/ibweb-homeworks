@@ -7,8 +7,8 @@
 Разработчики подготовили прототип будущей системы интернет-банка.
 
 Для запуска нужно скачать файлы из каталога `assets`:
-* [`docker-compose.yml`](./assets/docker-compose.yml)
-* [`docker-entrypoint-initdb.d/init.sql`](./assets/docker-entrypoint-initdb.d/init.sql)
+* [`docker-compose.yml`](./assets/docker-compose.yml);
+* [`docker-entrypoint-initdb.d/init.sql`](./assets/docker-entrypoint-initdb.d/init.sql).
 
 После скачивания структура на вашем диске должна иметь вид:
 * файл `docker-compose.yml`
