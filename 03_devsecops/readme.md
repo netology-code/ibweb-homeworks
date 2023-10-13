@@ -31,7 +31,7 @@
 ![register01](https://github.com/netology-code/ibweb-homeworks/assets/138114803/dd68e3cb-223c-47c8-9b54-453213c4fcca)
 
 
-2\. Установите значения, как на скриншоте, и нажмите кнопку Continue. (В полях надо указать любую страну и любой номер телефона.)
+2\. Установите значения, как на скриншоте, и нажмите кнопку **Continue**. (В полях надо указать любую страну и любой номер телефона.)
 
 ![trial1](https://github.com/netology-code/ibweb-homeworks/assets/138114803/22b4ef91-564e-409b-a750-e8d024b191c9)
 
@@ -47,21 +47,23 @@
 
 ![start_page](https://github.com/netology-code/ibweb-homeworks/assets/138114803/20c2e05f-321f-4a26-9d95-cf8883477ee4)
 
-6\. Проверьте свой email, указанный при регистрации, и подтвердите регистрацию.
+6\. Проверьте свой **email**, указанный при регистрации, и подтвердите регистрацию.
 
 ![confirm_reg](https://github.com/netology-code/ibweb-homeworks/assets/138114803/c0442513-1ba1-44c7-8efc-1457f81e68bf)
 
-7\. Нажмите на кнопку Create new project для создания нового проекта.
+7\. Нажмите на кнопку **Create new project** для создания нового проекта.
 
 ![start_page (1)](https://github.com/netology-code/ibweb-homeworks/assets/138114803/f99cc6c8-c6d8-4657-9191-51b46f5b3d1d)
 
-8\. Выберите **Import project ** для импорта готового проекта.
+8\. Выберите **Import project** для импорта готового проекта.
 
 ![start_page (1)](https://github.com/netology-code/ibweb-homeworks/assets/138114803/d1abf736-ade8-47cb-a5f9-231e47f15921)
 
-9\. Зайдите в пункт меню CI/CD — Pipelines и нажмите на кнопку Run Pipeline.
+9\. Нажмите на кнопку **Repository By URL** и заполните поле **Git repository URL** ссылкой: https://github.com/netology-code/ib-devsecops-app.git 
 
-![](9.png)
+![repo_by_url](https://github.com/netology-code/ibweb-homeworks/assets/138114803/4856f162-dbcf-4237-9ca6-c3514803f1cb)
+
+![repo_by_url_2](https://github.com/netology-code/ibweb-homeworks/assets/138114803/399acb42-657b-4b7a-8e2a-f4c9ba93c1bd)
 
 10\. Нажмите на кнопку Run Pipeline.
 
