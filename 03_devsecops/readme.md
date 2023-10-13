@@ -31,11 +31,13 @@
 ![register01](https://github.com/netology-code/ibweb-homeworks/assets/138114803/dd68e3cb-223c-47c8-9b54-453213c4fcca)
 
 
-2\. Заполните данные форм. Вводите существующий адрес электронной почты. Он нужен для верификации аккаунта.
+2\. Установите значения, как на скриншоте, и нажмите кнопку Continue. (В полях надо указать любую страну и любой номер телефона.)
 
 ![](2-1.png)
 
 ![](2-2.png)
+
+![trial1](https://github.com/netology-code/ibweb-homeworks/assets/138114803/22b4ef91-564e-409b-a750-e8d024b191c9)
 
 3\. Во вкладке Create заполните поля и нажмите Create project.
 
