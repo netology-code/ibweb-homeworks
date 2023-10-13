@@ -33,15 +33,11 @@
 
 2\. Установите значения, как на скриншоте, и нажмите кнопку Continue. (В полях надо указать любую страну и любой номер телефона.)
 
-![](2-1.png)
-
-![](2-2.png)
-
 ![trial1](https://github.com/netology-code/ibweb-homeworks/assets/138114803/22b4ef91-564e-409b-a750-e8d024b191c9)
 
-3\. Во вкладке Create заполните поля и нажмите Create project.
+3\. Заполните данные для продолжения.
 
-![](3.png)
+![welcome_page](https://github.com/netology-code/ibweb-homeworks/assets/138114803/1526e91e-ec88-41d9-96aa-72dc303e1484)
 
 4\. Выберите пункт меню Projects и нажмите кнопку New project.
 
