@@ -65,13 +65,28 @@
 
 ![repo_by_url_2](https://github.com/netology-code/ibweb-homeworks/assets/138114803/399acb42-657b-4b7a-8e2a-f4c9ba93c1bd)
 
-10\. Нажмите на кнопку Run Pipeline.
+10\. Оставьте остальные поля заполненными по умолчанию и нажмите **Create project**.
 
-![](10.png)
+![repo_by_url_2 (1)](https://github.com/netology-code/ibweb-homeworks/assets/138114803/7efdefd7-f740-4c38-9081-7368991cb4ff)
 
-11\. Вы увидите сообщение о необходимости валидации аккаунта с помощью кредитной карты. Если у вас есть карта иностранного банка, вы можете воспользоваться ей. Если карты нет, следуйте дальнейшим шагам.
+11\. Настройте локальные раннеры
 
-![](11.png)
+После регистрации, для работы с пайплайнами безопасности, необходимо поставить локальные раннеры на свой компьютер Раннер нужен для сборки и проведения проверок безопасности. Откройте настройки проекта, а именно настройки CI/CD.
+
+![settings_cicd](https://github.com/netology-code/ibweb-homeworks/assets/138114803/344952cd-9fa0-4701-a141-92377816ac58)
+
+Подсказка: адрес имеет вид https://gitlab.com/<название группы>/<название проекта>/-/settings/ci_cd
+
+Внутри настроек переходим к настройкам **Runners**, и нажимем **New project Runner**. Следуем инструкции по настройке раннера **windows/linux/macos** (в зависимости от вашей ОС).
+
+![create_runner](https://github.com/netology-code/ibweb-homeworks/assets/138114803/35531061-3068-44db-bd25-85e8ccf63025)
+
+При успешной настройке, в настройках отобразится локальный раннер.
+
+![runner_good](https://github.com/netology-code/ibweb-homeworks/assets/138114803/17803329-37a2-4a8e-8b60-a1aa4f1737c3)
+При этом, необходимо откючить Group runners и Shared runners.
+
+![disable_gr](https://github.com/netology-code/ibweb-homeworks/assets/138114803/ae24be11-53a4-46ed-b93d-9c133ac5fac4)
 
 12\. Перейдите в Settings — CI/CD.
 
