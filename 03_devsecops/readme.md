@@ -59,7 +59,7 @@
 
 ![import_project](https://github.com/netology-code/ibweb-homeworks/assets/138114803/2c06ee97-71c9-440d-8c1f-18afa27c18ff)
 
-9\. Нажмите на кнопку `Repository By URL` и заполните поле `Git repository URL` ссылкой: https://github.com/netology-code/ib-devsecops-app.git 
+9\. Нажмите на кнопку `Repository By URL` и заполните поле `Git repository URL` ссылкой: `https://github.com/netology-code/ib-devsecops-app.git`
 
 ![repo_by_url](https://github.com/netology-code/ibweb-homeworks/assets/138114803/4856f162-dbcf-4237-9ca6-c3514803f1cb)
 
@@ -84,6 +84,7 @@
 При успешной настройке, в настройках отобразится локальный раннер.
 
 ![runner_good](https://github.com/netology-code/ibweb-homeworks/assets/138114803/17803329-37a2-4a8e-8b60-a1aa4f1737c3)
+
 При этом, необходимо откючить Group runners и Shared runners.
 
 ![disable_gr](https://github.com/netology-code/ibweb-homeworks/assets/138114803/ae24be11-53a4-46ed-b93d-9c133ac5fac4)
