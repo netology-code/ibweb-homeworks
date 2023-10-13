@@ -39,13 +39,13 @@
 
 ![welcome_page](https://github.com/netology-code/ibweb-homeworks/assets/138114803/1526e91e-ec88-41d9-96aa-72dc303e1484)
 
-4\. Выберите пункт меню Projects и нажмите кнопку New project.
+4\. Введите название для группы проектов.
 
-![](4.png)
+![trial2](https://github.com/netology-code/ibweb-homeworks/assets/138114803/29c4b937-6fa9-45c1-bbca-ac09d5874e09)
 
-5\. Выберите Create a project для создания нового проекта.
+5\. Дождитесь перехода на главную страницу.
 
-![](5.png)
+![start_page](https://github.com/netology-code/ibweb-homeworks/assets/138114803/20c2e05f-321f-4a26-9d95-cf8883477ee4)
 
 6\. Выберите Import project.
 
