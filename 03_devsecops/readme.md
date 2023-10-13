@@ -57,7 +57,7 @@
 
 8\. Выберите **Import project** для импорта готового проекта.
 
-![start_page (1)](https://github.com/netology-code/ibweb-homeworks/assets/138114803/d1abf736-ade8-47cb-a5f9-231e47f15921)
+![import_project](https://github.com/netology-code/ibweb-homeworks/assets/138114803/2c06ee97-71c9-440d-8c1f-18afa27c18ff)
 
 9\. Нажмите на кнопку **Repository By URL** и заполните поле **Git repository URL** ссылкой: https://github.com/netology-code/ib-devsecops-app.git 
 
