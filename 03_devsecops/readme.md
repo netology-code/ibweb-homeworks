@@ -95,11 +95,11 @@
 
 Для использования докера в качестве раннеров, нужно иметь запущенный на компьютере докер, и выполнить неколько простых команд:
 
-`docker pull gitlab/gitlab-runner
+`docker pull gitlab/gitlab-runner`
 
-docker run -d --name gitlab-runner --restart always  -v /Users/Shared/gitlab-runner/config:/etc/gitlab-runner  -v /var/run/docker.sock:/var/run/docker.sock gitlab/gitlab-runner:latest
+`docker run -d --name gitlab-runner --restart always  -v /Users/Shared/gitlab-runner/config:/etc/gitlab-runner  -v /var/run/docker.sock:/var/run/docker.sock gitlab/gitlab-runner:latest`
 
-docker run --rm -it -v /Users/shared/gitlab-runner/config:/etc/gitlab-runner gitlab/gitlab-runner register`
+`docker run --rm -it -v /Users/shared/gitlab-runner/config:/etc/gitlab-runner gitlab/gitlab-runner register`
 
 При регистрации будут поля для заполнения (в командной строке после запуска последней команды): `GitLab instance URL` - https://gitlab.com `registration token` который отображается на странице регистрации раннера
 `Enter a name for the runner` - название раннера (любое) `Enter an executor:` - просто указать docker `default Docker image` - указываем стандартный образ python
