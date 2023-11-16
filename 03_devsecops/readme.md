@@ -89,6 +89,17 @@
 
 ![disable_gr](https://github.com/netology-code/ibweb-homeworks/assets/138114803/ae24be11-53a4-46ed-b93d-9c133ac5fac4)
 
+11.1. Docker runner
+
+Для использования докера в качестве раннеров, нужно иметь запущенный на компьютере докер, и выполнить неколько простых команд:
+
+`docker pull gitlab/gitlab-runner
+docker run -d --name gitlab-runner --restart always  -v /Users/Shared/gitlab-runner/config:/etc/gitlab-runner  -v /var/run/docker.sock:/var/run/docker.sock gitlab/gitlab-runner:latest
+docker run --rm -it -v /Users/shared/gitlab-runner/config:/etc/gitlab-runner gitlab/gitlab-runner register`
+
+При регистрации будут поля для заполнения (в командной строке после запуска последней команды): `GitLab instance URL` - https://gitlab.com `registration token` который отображается на странице регистрации раннера
+`Enter a name for the runner` - название раннера (любое) `Enter an executor:` - просто указать docker `default Docker image` - указываем стандартный образ python
+
 12\. Зайдите в пункт меню `Build — Pipelines` и нажмите на кнопку `Run Pipeline`.
 
 ![pipeline](https://github.com/netology-code/ibweb-homeworks/assets/138114803/584d0fbe-3da9-4273-b1b4-839ed33ccf76)
