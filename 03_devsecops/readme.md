@@ -81,6 +81,8 @@
 
 ![create_runner](https://github.com/netology-code/ibweb-homeworks/assets/138114803/35531061-3068-44db-bd25-85e8ccf63025)
 
+После установки раннера, его надо запустить командой `gitlab-runner run`. Однако, раннер нужно зарегистрировать. Токен будет указан на странице gitlab (надо скопировать и указать в команде): `gitlab-runner register --name my-runner --url "http://gitlab.example.com" --registration-token <тут токен со страницы регистрации/создания раннера>`
+
 При успешной настройке, в настройках отобразится локальный раннер.
 
 ![runner_good](https://github.com/netology-code/ibweb-homeworks/assets/138114803/17803329-37a2-4a8e-8b60-a1aa4f1737c3)
