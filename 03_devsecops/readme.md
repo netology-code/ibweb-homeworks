@@ -26,14 +26,47 @@
 
 ### Этапы выполнения
 
-1\. Перейдите по [ссылке](https://gitlab.com/-/trial_registrations/new) и зарегистрируйте новую учётную запись. Попросит подтвердить почтовый ящик, поэтому указываем действую почту.
+1\. Перейдите по [ссылке](https://gitlab.com/-/trial_registrations/new) и зарегистрируйте новую учётную запись. 
+
+Для регистрации вам будет доступно 2 варианта.
+
+<details>
+  <summary> Вариант 1. Если у вас есть аккаунт GitHub или Google.</summary>
+
+Выберите один из вариантов: GitHub или Google.
+
+![01](https://github.com/netology-code/ibweb-homeworks/blob/IBWEB-23/03_devsecops/2.1.png)
+
+Если вы выбрали GitHub, подтвердите свой выбор и нажмите кнопку `Authorize gitlabhq`:
+
+<img src="https://github.com/netology-code/ibweb-homeworks/blob/IBWEB-23/03_devsecops/2.2.png" width="70%">
+
+Если вы выбрали Google, в окне кликните на свой аккаунт для подтверждения:
+
+<img src="https://github.com/netology-code/ibweb-homeworks/blob/IBWEB-23/03_devsecops/3_1.png" width="70%">
+
+-----
+  
+</details>
+
+<details>
+  <summary> Вариант 2. Если у вас нет аккаунта GitHub или Google, зарегистрируйте свой аккаунт на e-mail.</summary>
+
+В окне укажите действующую почту:
 
 ![register01](https://github.com/netology-code/ibweb-homeworks/assets/138114803/dd68e3cb-223c-47c8-9b54-453213c4fcca)
 
-
-2\. Установите значения, как на скриншоте, и нажмите кнопку `Continue`. (В полях надо указать любую страну и любой номер телефона.)
+Установите значения, как на скриншоте, и нажмите кнопку `Continue` (в полях укажите любую страну и любой номер телефона):
 
 ![trial1](https://github.com/netology-code/ibweb-homeworks/assets/138114803/22b4ef91-564e-409b-a750-e8d024b191c9)
+
+-----
+  
+</details>
+
+2\. Проверьте свой `e-mail`, указанный при регистрации, и подтвердите регистрацию.
+
+![confirm_reg](https://github.com/netology-code/ibweb-homeworks/assets/138114803/c0442513-1ba1-44c7-8efc-1457f81e68bf)
 
 3\. Заполните данные для продолжения.
 
@@ -47,29 +80,25 @@
 
 ![start_page](https://github.com/netology-code/ibweb-homeworks/assets/138114803/20c2e05f-321f-4a26-9d95-cf8883477ee4)
 
-6\. Проверьте свой `email`, указанный при регистрации, и подтвердите регистрацию.
-
-![confirm_reg](https://github.com/netology-code/ibweb-homeworks/assets/138114803/c0442513-1ba1-44c7-8efc-1457f81e68bf)
-
-7\. Нажмите на кнопку `Create new project` для создания нового проекта.
+6\. Нажмите на кнопку `Create new project` для создания нового проекта.
 
 ![start_page (1)](https://github.com/netology-code/ibweb-homeworks/assets/138114803/f99cc6c8-c6d8-4657-9191-51b46f5b3d1d)
 
-8\. Выберите `Import project` для импорта готового проекта.
+7\. Выберите `Import project` для импорта готового проекта.
 
 ![import_project](https://github.com/netology-code/ibweb-homeworks/assets/138114803/2c06ee97-71c9-440d-8c1f-18afa27c18ff)
 
-9\. Нажмите на кнопку `Repository By URL` и заполните поле `Git repository URL` ссылкой: `https://github.com/netology-code/ib-devsecops-app.git`
+8\. Нажмите на кнопку `Repository By URL` и заполните поле `Git repository URL` ссылкой: `https://github.com/netology-code/ib-devsecops-app.git`
 
 ![repo_by_url](https://github.com/netology-code/ibweb-homeworks/assets/138114803/4856f162-dbcf-4237-9ca6-c3514803f1cb)
 
 ![repo_by_url_2](https://github.com/netology-code/ibweb-homeworks/assets/138114803/399acb42-657b-4b7a-8e2a-f4c9ba93c1bd)
 
-10\. Оставьте остальные поля заполненными по умолчанию и нажмите `Create project`.
+9\. Оставьте остальные поля заполненными по умолчанию и нажмите `Create project`.
 
 ![repo_by_url_2 (1)](https://github.com/netology-code/ibweb-homeworks/assets/138114803/7efdefd7-f740-4c38-9081-7368991cb4ff)
 
-11\. Настройте локальные раннеры
+10\. Настройте локальные раннеры
 
 После регистрации, для работы с пайплайнами безопасности, необходимо поставить локальные раннеры на свой компьютер Раннер нужен для сборки и проведения проверок безопасности. Откройте настройки проекта, а именно настройки CI/CD.
 
@@ -91,7 +120,7 @@
 
 ![disable_gr](https://github.com/netology-code/ibweb-homeworks/assets/138114803/ae24be11-53a4-46ed-b93d-9c133ac5fac4)
 
-11.1. Docker runner
+11\. Docker runner
 
 Для использования докера в качестве раннеров, нужно иметь запущенный на компьютере докер, и выполнить неколько простых команд:
 
