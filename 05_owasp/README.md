@@ -1,4 +1,4 @@
-# Домашнее задание к занятию «2.1. OWASP»
+# Домашнее задание к занятию «OWASP Web. Часть 1»
 
 Пришлите ответы на вопросы в личном кабинете на сайте [netology.ru](https://netology.ru).
 
@@ -62,10 +62,11 @@ services:
 
 Прочитайте информацию о файле [`robots.txt`](https://developers.google.com/search/docs/advanced/robots/intro?hl=ru) и [его описание](https://developers.google.com/search/docs/advanced/robots/robots_txt?hl=ru).
 
-Почитайте статьи на сайтах компаний, занимающихся информационной безопасностью:
-* [Tenable](https://www.tenable.com/plugins/nessus/10302).
-* [Synopsis](https://www.synopsys.com/blogs/software-security/robots-txt/).
-
+Почитайте статьи на тему корректной настройки robots.txt и использование robots.txt при тестировании безопасности сайта:
+* [OWASP WSTG How To Test](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/01-Information_Gathering/03-Review_Webserver_Metafiles_for_Information_Leakage).
+* [robots.txt в рамках CTF](https://kmb.cybber.ru/web/robots/main.html)
+* [Как настраивать robots.txt для сайтов](https://www.calltouch.ru/blog/pravilnaya-nastrojka-robots-txt-podrobnoe-rukovodstvo/)
+  
 ### Этапы выполнения
 
 Проанализируйте целевой сервис на предмет корректности использования `robots.txt`.
