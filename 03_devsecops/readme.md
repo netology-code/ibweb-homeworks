@@ -24,6 +24,12 @@
 * https://gitlab.com/gitlab-org/gitlab/-/tree/master/lib/gitlab/ci/templates/Security;
 * https://docs.gitlab.com/ee/user/application_security/ (документация).
 
+## DISCLAIMER
+
+В тестовом виде запустили [свой GitLab по адресу](http://213.226.126.48). Открыта регистрация. Нужен апрув от администратора - niyazkashapovexpertib в discord.
+Остальные шаги те же что и ниже. Так же нужен свой раннер и настроить свой проект под свои нужды.
+
+
 ### Этапы выполнения
 
 1\. Перейдите по [ссылке](https://gitlab.com/-/trial_registrations/new) и зарегистрируйте новую учётную запись. 
