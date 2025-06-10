@@ -56,134 +56,24 @@
 При необходимости можно создать репозиторий с нуля, для этого необходимо нажать на кнопку **Добавить**, **Новый репозиторий**
 <img width="1680" alt="newRepo" src="https://github.com/user-attachments/assets/f0251146-4535-4eaa-a5fe-e6ea2847f743" />
 
-Обязательной информацией для создания репозитория является имя (а также видимость: публичный/приватный), однако рекомендуется также инициализировать репозиторий с файлами README (отображает информацию на странице репозитория, формат md) и .gitignore (перечисляются файлы, которые гит должен игнорировать, как правило системные/служебные файлы, используемые в работе)
+Обязательной информацией для создания репозитория является имя (а также видимость: публичный,приватный), однако рекомендуется также инициализировать репозиторий с файлами README (отображает информацию на странице репозитория, формат md) и .gitignore (перечисляются файлы, которые гит должен игнорировать, как правило системные,служебные файлы, используемые в работе)
+
+**Сборка приложения** 
+
+Для сборки учебного проекта используется локальный раннер ([**подробнее о раннерах!**](https://gitverse.ru/docs/knowledge-base/actions/runners/)), который необходимо [скачать](https://gitverse.ru/docs/knowledge-base/actions/runners/#%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B8-%D0%B4%D0%BB%D1%8F-%D1%81%D0%BA%D0%B0%D1%87%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F), запустить и подключить к нашему проекту.
+
+Для подключения раннера необходимо его связать с проектом — зарегистрировать. Для этого необходимо открыть настройки проекта (кнопка **Настройки**)
+
+<img width="1716" alt="Settings" src="https://github.com/user-attachments/assets/bb8ca443-5726-4fb1-a68f-45618fb4f359" />
+
+выбрать вкладку Раннеры, нажать кнопку **Добавить раннер** и скопировать **сгенерированный токен**, который используется для подключения раннера к проекту.
+
+<img width="1792" alt="runners" src="https://github.com/user-attachments/assets/2044c31b-aeb7-468e-82b0-f923247e4c65" />
 
 
 
-2\. Проверьте свой `email`, указанный при регистрации, и подтвердите регистрацию.
-
-![confirm_reg](https://github.com/netology-code/ibweb-homeworks/assets/138114803/c0442513-1ba1-44c7-8efc-1457f81e68bf)
-
-3\. Заполните данные для продолжения.
-
-![welcome_page](https://github.com/netology-code/ibweb-homeworks/assets/138114803/1526e91e-ec88-41d9-96aa-72dc303e1484)
-
-4\. Введите название для группы проектов.
-
-![trial2](https://github.com/netology-code/ibweb-homeworks/assets/138114803/29c4b937-6fa9-45c1-bbca-ac09d5874e09)
-
-5\. Дождитесь перехода на главную страницу.
-
-![start_page](https://github.com/netology-code/ibweb-homeworks/assets/138114803/20c2e05f-321f-4a26-9d95-cf8883477ee4)
-
-6\. Нажмите на кнопку `Create new project` для создания нового проекта.
-
-![start_page (1)](https://github.com/netology-code/ibweb-homeworks/assets/138114803/f99cc6c8-c6d8-4657-9191-51b46f5b3d1d)
-
-7\. Выберите `Import project` для импорта готового проекта.
-
-![import_project](https://github.com/netology-code/ibweb-homeworks/assets/138114803/2c06ee97-71c9-440d-8c1f-18afa27c18ff)
-
-8\. Нажмите на кнопку `Repository By URL` и заполните поле `Git repository URL` ссылкой: `https://github.com/netology-code/ib-devsecops-app.git`
-
-![repo_by_url](https://github.com/netology-code/ibweb-homeworks/assets/138114803/4856f162-dbcf-4237-9ca6-c3514803f1cb)
-
-![repo_by_url_2](https://github.com/netology-code/ibweb-homeworks/assets/138114803/399acb42-657b-4b7a-8e2a-f4c9ba93c1bd)
-
-9\. Оставьте остальные поля заполненными по умолчанию и нажмите `Create project`.
-
-![repo_by_url_2 (1)](https://github.com/netology-code/ibweb-homeworks/assets/138114803/7efdefd7-f740-4c38-9081-7368991cb4ff)
-
-10\. Настройте локальные раннеры
-
-После регистрации, для работы с пайплайнами безопасности, необходимо поставить локальные раннеры на свой компьютер Раннер нужен для сборки и проведения проверок безопасности. Откройте настройки проекта, а именно настройки CI/CD.
-
-![settings_cicd](https://github.com/netology-code/ibweb-homeworks/assets/138114803/344952cd-9fa0-4701-a141-92377816ac58)
-
-**Подсказка:** адрес имеет вид `https://gitlab.com/<название группы>/<название проекта>/-/settings/ci_cd`
-
-Внутри настроек переходим к настройкам `Runners`, и нажимем `New project Runner`. Следуем инструкции по настройке раннера `windows/linux/macos` (в зависимости от вашей ОС). Можно использовать docker (на свой страх и риск)
-
-![create_runner](https://github.com/netology-code/ibweb-homeworks/assets/138114803/35531061-3068-44db-bd25-85e8ccf63025)
-
-После установки раннера, его надо запустить командой `gitlab-runner run`. Однако, раннер нужно зарегистрировать. Токен будет указан на странице gitlab (надо скопировать и указать в команде): `gitlab-runner register --name my-runner --url "http://gitlab.example.com" --registration-token <тут токен со страницы регистрации/создания раннера>`
-
-При успешной настройке, в настройках отобразится локальный раннер.
-
-![runner_good](https://github.com/netology-code/ibweb-homeworks/assets/138114803/17803329-37a2-4a8e-8b60-a1aa4f1737c3)
-
-При этом, необходимо откючить Group runners и Shared runners.
-
-![disable_gr](https://github.com/netology-code/ibweb-homeworks/assets/138114803/ae24be11-53a4-46ed-b93d-9c133ac5fac4)
-
-11\. Docker runner
-
-Для использования докера в качестве раннеров, нужно иметь запущенный на компьютере докер, и выполнить неколько простых команд:
-
-`docker pull gitlab/gitlab-runner`
-
-`docker run -d --name gitlab-runner --restart always  -v /Users/Shared/gitlab-runner/config:/etc/gitlab-runner  -v /var/run/docker.sock:/var/run/docker.sock gitlab/gitlab-runner:latest`
-
-`docker run --rm -it -v /Users/shared/gitlab-runner/config:/etc/gitlab-runner gitlab/gitlab-runner register`
-
-При регистрации будут поля для заполнения (в командной строке после запуска последней команды): `GitLab instance URL` - https://gitlab.com `registration token` который отображается на странице регистрации раннера
-`Enter a name for the runner` - название раннера (любое) `Enter an executor:` - просто указать docker `default Docker image` - указываем стандартный образ python
 
 
-12\. Зайдите в пункт меню `Build — Pipelines` и нажмите на кнопку `Run Pipeline`.
-
-![pipeline](https://github.com/netology-code/ibweb-homeworks/assets/138114803/584d0fbe-3da9-4273-b1b4-839ed33ccf76)
-
-13\. На странице снова нажмите на кнопку `Run Pipeline`.
-
-![run_pipeline](https://github.com/netology-code/ibweb-homeworks/assets/138114803/4ce286bc-d467-484f-9fd1-90da17829656)
-
-14\. Дождитесь окончания процесса анализа.
-
-![13_inprogress](https://github.com/netology-code/ibweb-homeworks/assets/138114803/133df17c-a780-431c-98ba-e2e110c0ab0f)
-
-![13_finished](https://github.com/netology-code/ibweb-homeworks/assets/138114803/f83d002d-b6ad-497d-80b5-7e422f9f28b4)
-
-**Примечание.** В списке задач вы увидите упавшую задачу с `retire-js`. Это нормально.
-
-![failed-jobs](https://github.com/netology-code/ibweb-homeworks/assets/138114803/c06b87ae-6938-4b5f-85c1-0e3576b210c0)
-
-![retirejs](https://github.com/netology-code/ibweb-homeworks/assets/138114803/8962d9e9-3379-4678-be4a-57f4a271d3fd)
-
-15\. (Опционально, на Ultimate) Перейдите в раздел `Security & Compliance`. (активно только на Ultimate, если уровня не хватает, результаты будут в артефактах Jobы)
-
-![14](https://github.com/netology-code/ibweb-homeworks/assets/138114803/db101ba4-3f57-4915-83a8-11bdad619f5a)
-
-16\. (Опционально, на Ultimate) Изучите внимательно разделы:
-
-- Vulnerability Report — отчёт об уязвимостях;
-- Dependency List.
-
-17\. Если Gitlab Free или Premium, то результаты сканов будут в виде [артефактов](https://docs.gitlab.com/ee/development/integrations/secure.html#artifacts)   
-
-Результаты сканов можно посмотреть непосредственно в файлах. 
-
-### Ответьте на вопросы:
-
-**Важно**: после окончания проверки подождите пару минут и несколько раз обновите страницу через `Shift` + `F5`. Иногда не все данные по проверкам подтягиваются сразу. Убедитесь, что уязвимости точно найдены для приложения, зависимостей и контейнера.
-
-**Вопросы для домашнего задания** 
-
-1\. Сколько уязвимостей и какого уровня значимости найдено (Severity)?
-
-![vulnerabilities](https://github.com/netology-code/ibweb-homeworks/assets/138114803/260031a1-4260-4f56-b743-0ffc5f4cb89e)
-
-2\. Сколько из них:
-- в самом приложении (SAST);
-- в контейнерах (Container Scanning);
-- в зависимостях (Dependency Scanning);
-- секретов (Secret Detection)?
-
-3\. Какая уязвимость найдена в самом приложении?
-
-4\. Сколько зависимостей в приложении?
-
-5\. Сколько различного рода лицензий используется в приложении и его зависимостях?
 
 ### Решение задания
 
