@@ -21,7 +21,7 @@
 
 ### Этапы выполнения
 
-**1. Создание учетной записи GitVerse**
+**1. Создание учётной записи GitVerse**
 
 1. Перейдите на домашнюю страницу [GitVerse](https://gitverse.ru/) и нажмите на **Войти** или **Начать работу**:
 ![](https://gitverse.ru/docs/_next/static/media/authorizationButton.c88dba9b.png)
