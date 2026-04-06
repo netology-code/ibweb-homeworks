@@ -1,6 +1,8 @@
 # Домашнее задание к занятию «DevSecOps и AppSec. Часть 2»
 
-Пришлите ответы на вопросы в личном кабинете на сайте [netology.ru](https://netology.ru).
+**Примерное время выполнения задания — 120 минут.**
+
+Задавать вопросы можно через личный кабинет или на доске вопросов на сайте.
 
 ## Описание
 
@@ -8,21 +10,14 @@
 
 Обратите внимание, что домашнее задание является необязательным. Его выполнение не повлияет на получение зачёта по модулю.
 
-## Задание GitLab
+## Работа с GitVerse
+В этом задании применяется сервис GitVerse — платформа для хостинга Git-репозиториев, контроля версий кода и совместной разработки, являющаяся одним из популярных решений для поддержки DevOps и DevSecOps.
 
-В этом задании применяется сервис GitLab — один из комплексных и самых популярных решений для поддержки DevOps и DevSecOps.
+Вы будете использовать заранее подготовленные материалы для упрощения настройки и развёртывания исследуемого приложения.
 
-Вы будете использовать пробную версию из облака для упрощения настройки и развёртывания.
+При выполнении задания вы получите навыки работы с инструментарием DevSecOps, которые будут полезны для вашего профессионального развития.
 
-Командой GitLab уже подготовлены и настроены инструменты, которые позволяют выполнять действия:
-1. Анализировать код на уязвимости — SAST, включая зависимости — SCA или Dependency Scanning.
-2. Анализировать контейнеры на уязвимости — Container Scanning.
-3. Анализировать используемые в проекте лицензии — License Scanning.
-4. Проверять секреты — Secret Detection.
-
-Список всех проверок доступен по адресам:
-* https://gitlab.com/gitlab-org/gitlab/-/tree/master/lib/gitlab/ci/templates/Security;
-* https://docs.gitlab.com/ee/user/application_security/ (документация).
+В данной работе предполагается самостоятельная и последующая работа с документацией.
 
 ## DISCLAIMER
 
@@ -32,168 +27,173 @@
 
 ### Этапы выполнения
 
-1\. Перейдите по [ссылке на глобальный гитлаб](https://gitlab.com/-/trial_registrations/new) или [ссылке на локальный гитлаб](http://213.226.126.48/users/sign_up) и зарегистрируйте новую учётную запись. 
+**1. Создание учётной записи GitVerse**
 
-Для регистрации вам будет доступно 2 варианта.
+1. Перейдите на домашнюю страницу [GitVerse](https://gitverse.ru/) и нажмите на **Войти** или **Начать работу**:
+![](https://gitverse.ru/docs/_next/static/media/authorizationButton.c88dba9b.png)
+2. Нажмите на **Войти**:
+![](https://gitverse.ru/docs/_next/static/media/registrationPageEnterButton.9799ba27.png)
+3. Нажмите на **Зарегистрироваться**:
+![](https://gitverse.ru/docs/_next/static/media/cloudRuLoginPageRegisterButton.475090b4.png)
+4. Введите свой email, нажмите на **Подтвердить** (отправить письмо с кодом) и следуйте дальнейшим инструкциям для заведения учётной записи: 
+![](https://gitverse.ru/docs/_next/static/media/registrationEnterEmail.b426f019.png)
+В качестве способа Дополнительной защиты выберите двухфакторную аутентификацию (по одноразовому коду).
 
-<details>
-  <summary> Вариант 1. Если у вас есть аккаунт GitHub или Google.</summary>
+6. Далее выберите предпочтительный почтовый ящик для получения уведомлений от сервера и имя пользователя.
+<img width="1792" alt="final" src="https://github.com/user-attachments/assets/2f260440-9c06-49eb-a6af-4fdbd4a2fd8a" />
 
-Выберите один из вариантов: GitHub или Google.
+----
+**2. Создание репозитория с нуля**
 
-![01](https://github.com/netology-code/ibweb-homeworks/blob/IBWEB-23/03_devsecops/2.1.png)
+При необходимости можно создать репозиторий с нуля, для этого необходимо нажать на кнопку **Добавить**, **Новый репозиторий**
+<img width="1680" alt="newRepo" src="https://github.com/user-attachments/assets/f0251146-4535-4eaa-a5fe-e6ea2847f743" />
 
-Если вы выбрали GitHub, подтвердите свой выбор и нажмите кнопку `Authorize gitlabhq`:
+Обязательной информацией для создания репозитория является имя, а также видимость: публичный,приватный. Однако рекомендуется также инициализировать репозиторий с файлами README (отображает информацию на странице репозитория, формат md) и .gitignore (перечисляются файлы, которые гит должен игнорировать — как правило системные и служебные файлы, используемые в работе)
 
-<img src="https://github.com/netology-code/ibweb-homeworks/blob/IBWEB-23/03_devsecops/2.2.png" width="70%">
+----
 
-Если вы выбрали Google, в окне кликните на свой аккаунт для подтверждения:
+**3. Импорт учебного проекта**
 
-<img src="https://github.com/netology-code/ibweb-homeworks/blob/IBWEB-23/03_devsecops/3_1.png" width="70%">
+Для добавления учебного проекта в ваш репозиторий необходимо:
 
------
-  
-</details>
+1. На верхней панели элементов нажмите на **+ Добавить**, **Импорт репозитория**
+<img width="1792" alt="import2" src="https://github.com/user-attachments/assets/1c691656-c4f7-4947-808e-013453e91155" />
 
-<details>
-  <summary> Вариант 2. Если у вас нет аккаунта GitHub или Google, зарегистрируйте свой аккаунт на email.</summary>
+<img width="1686" alt="import" src="https://github.com/user-attachments/assets/9968aba3-5204-43e6-8430-7e24a27c95a4" />
 
-В окне укажите действующую почту:
+2. Затем выберите сервис, из которого добавляется репозиторий (github)
+3. В поле **URL для импорта** укажите адрес:  `https://github.com/netology-code/ib-devsecops-app.git`(при необходимости обновите ссылку)
+4. В поле **Название репозитория** задайте имя репозитория. Остальные поля опциональны и не требует заполнения.
+5. Далее нажмите на кнопку **Импортировать репозиторий** — в вашем Git-аккаунте появится копия учебного проекта.
+<img width="1792" alt="importResult" src="https://github.com/user-attachments/assets/f94c6bd5-7e86-4227-a636-eb0cca0411d7" />
 
-![register01](https://github.com/netology-code/ibweb-homeworks/assets/138114803/dd68e3cb-223c-47c8-9b54-453213c4fcca)
+Учебный проект состоит из типового приложения nodejs и конфигурационных файлов, задающих процесс сборки.
 
-Установите значения, как на скриншоте, и нажмите кнопку `Continue` (в полях укажите любую страну и любой номер телефона):
+----
+### Процесс разработки ПО (CI/CD)
+Процесс разработки ПО состоит из
+процессов интеграции ПО (Continuous Integration, CI) и процессов развёртывания ПО (Continuous Deployment, CD) (подробнее см. [здесь](https://ru.wikipedia.org/wiki/CI/CD)). 
+Задачи, связанные с исполнением процессов разработки решаются с помощью раннеров
+[**подробнее о раннерах!**](https://gitverse.ru/docs/knowledge-base/actions/runners/)
 
-![trial1](https://github.com/netology-code/ibweb-homeworks/assets/138114803/22b4ef91-564e-409b-a750-e8d024b191c9)
+**4. Подключение локального раннера**
 
------
-  
-</details>
+Скачать подходящий для платформы раннер можно по следующей ссылке: [**скачать**](https://gitverse.ru/docs/cicd/docs/runners/self-hosted/).
 
-2\. Проверьте свой `email`, указанный при регистрации, и подтвердите регистрацию.
+Для подключения раннера необходимо его связать с проектом — зарегистрировать. Для этого необходимо открыть настройки проекта (кнопка **Настройки**)
 
-![confirm_reg](https://github.com/netology-code/ibweb-homeworks/assets/138114803/c0442513-1ba1-44c7-8efc-1457f81e68bf)
+<img width="1716" alt="Settings" src="https://github.com/user-attachments/assets/bb8ca443-5726-4fb1-a68f-45618fb4f359" />
 
-3\. Заполните данные для продолжения.
+Выбрать вкладку Раннеры. Нажать на кнопку **Добавить раннер** и скопировать **сгенерированный токен**, который используется для подключения раннера к проекту.
 
-![welcome_page](https://github.com/netology-code/ibweb-homeworks/assets/138114803/1526e91e-ec88-41d9-96aa-72dc303e1484)
+<img width="1792" alt="runners" src="https://github.com/user-attachments/assets/2044c31b-aeb7-468e-82b0-f923247e4c65" />
 
-4\. Введите название для группы проектов.
 
-![trial2](https://github.com/netology-code/ibweb-homeworks/assets/138114803/29c4b937-6fa9-45c1-bbca-ac09d5874e09)
+Скачав бинарный файл раннера, сделайте его исполняемым и проверьте работу (проверка его работы выполняется запуском приложения раннера с ключом **-version**). 
 
-5\. Дождитесь перехода на главную страницу.
+Аргумент **register** вызывает интерактивный режим регистрации раннера, который интерактивно запросит требуемую для работы раннера информацию
 
-![start_page](https://github.com/netology-code/ibweb-homeworks/assets/138114803/20c2e05f-321f-4a26-9d95-cf8883477ee4)
+<img width="1124" alt="check" src="https://github.com/user-attachments/assets/4ab022ee-4291-4d24-9d58-09817c98e721" />
 
-6\. Нажмите на кнопку `Create new project` для создания нового проекта.
+Откройте вновь настройки проекта, на вкладке раннеры появится ваш раннер (в неактивном режиме)
 
-![start_page (1)](https://github.com/netology-code/ibweb-homeworks/assets/138114803/f99cc6c8-c6d8-4657-9191-51b46f5b3d1d)
+<img width="1680" alt="checkRunners" src="https://github.com/user-attachments/assets/1e986d98-4a8c-42ce-b3cf-dbd5602a69fb" />
 
-7\. Выберите `Import project` для импорта готового проекта.
+Для того, чтобы раннер работал в «активном режиме», т.е. постоянно, получая инструкции от сервера, используется аргумент **daemon**.
 
-![import_project](https://github.com/netology-code/ibweb-homeworks/assets/138114803/2c06ee97-71c9-440d-8c1f-18afa27c18ff)
+----
 
-8\. Нажмите на кнопку `Repository By URL` и заполните поле `Git repository URL` ссылкой: `https://github.com/netology-code/ib-devsecops-app.git`
+**5. Построение пайплайна**
 
-![repo_by_url](https://github.com/netology-code/ibweb-homeworks/assets/138114803/4856f162-dbcf-4237-9ca6-c3514803f1cb)
+1. Пайплайн — это набор инструкций.
 
-![repo_by_url_2](https://github.com/netology-code/ibweb-homeworks/assets/138114803/399acb42-657b-4b7a-8e2a-f4c9ba93c1bd)
+Пайплайн описывается в специальных конфигурационных файлах на языке разметки yaml, размещаемых в каталоге **.gitverse/workflows/**.
 
-9\. Оставьте остальные поля заполненными по умолчанию и нажмите `Create project`.
+Для учебного проекта заданы две стадии: **build** и **deploy**, которые описаны в файле ci.yaml:
 
-![repo_by_url_2 (1)](https://github.com/netology-code/ibweb-homeworks/assets/138114803/7efdefd7-f740-4c38-9081-7368991cb4ff)
+```
+name: Study
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+stages:
+    - build-stage
+    - deploy-stage
 
-10\. Настройте локальные раннеры
+build:
+    stage: build-stage
+    script:
+        - npm install
+    artifacts:
+        untracked: false
+        when: on_success
+        paths:
+            - node_modules
+            - package-lock.json
 
-После регистрации, для работы с пайплайнами безопасности, необходимо поставить локальные раннеры на свой компьютер Раннер нужен для сборки и проведения проверок безопасности. Откройте настройки проекта, а именно настройки CI/CD.
+deploy:
+    stage: deploy-stage 
+    image: node
+    script:
+        - chmod +x deploy.sh
+        - bash deploy.sh`
+```        
+На этапе **build** выполняется сборка и установка вашего приложения (команда **npm install**). 
 
-![settings_cicd](https://github.com/netology-code/ibweb-homeworks/assets/138114803/344952cd-9fa0-4701-a141-92377816ac58)
+На этапе **deploy** выполняется запуск вашего приложения c помощью следующего sh-скрипта:
 
-**Подсказка:** адрес имеет вид `https://gitlab.com/<название группы>/<название проекта>/-/settings/ci_cd`
+```  
+#! /bin/bash
+# Ищем и останавливаем работающий процесс npm, проверяя файл, в котором записан номер процесса, когда процесс npm уже работает
 
-Внутри настроек переходим к настройкам `Runners`, и нажимем `New project Runner`. Следуем инструкции по настройке раннера `windows/linux/macos` (в зависимости от вашей ОС). Можно использовать docker (на свой страх и риск)
+if [ -f pidfile.txt ]; then
+  PID=$(cat pidfile.txt)
+  kill $PID
+  rm pidfile.txt
+else
+  echo "pidfile.txt not found. No process to stop."
+fi
 
-![create_runner](https://github.com/netology-code/ibweb-homeworks/assets/138114803/35531061-3068-44db-bd25-85e8ccf63025)
+# Запускаем процесс npm в фоновом режиме, сохраняя номер этого процесса в файл pidfile.txt
+npm start > /dev/null 2>&1 & 
+PID=$!
+echo "Started npm start with PID: $PID"
+echo $PID > pidfile.txt
 
-После установки раннера, его надо запустить командой `gitlab-runner run`. Однако, раннер нужно зарегистрировать. Токен будет указан на странице gitlab (надо скопировать и указать в команде): `gitlab-runner register --name my-runner --url "http://gitlab.example.com" --registration-token <тут токен со страницы регистрации/создания раннера>`
+# Далее можно добавлять команды для раннера, при необходимости
 
-При успешной настройке, в настройках отобразится локальный раннер.
+# При отсутствии проблем скрипт завершится с успехом	
+exit 0
+```  
 
-![runner_good](https://github.com/netology-code/ibweb-homeworks/assets/138114803/17803329-37a2-4a8e-8b60-a1aa4f1737c3)
+**Важные указания при выполнении работы:**
 
-При этом, необходимо откючить Group runners и Shared runners.
+1) Для работы локального раннера необходимо наличие установленного докер окружения и работы службы докера в фоне. Подробнее см. [здесь](https://gitverse.ru/docs/actions-conf/runners-uc/#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-docker-ubuntu).
 
-![disable_gr](https://github.com/netology-code/ibweb-homeworks/assets/138114803/ae24be11-53a4-46ed-b93d-9c133ac5fac4)
+2) Для демонстрации пайплайна можно воспользоваться преимуществами gitverse и использовать облачный раннер, запускать который не требуется (Подробнее см. [здесь](https://gitverse.ru/docs/actions-conf/cloud-runners-uc/)). В случае использования облачного раннера допускается использовать сборку произвольного проекта.
 
-11\. Docker runner
+3) При отправке задания на проверку ответьте своими словами на следующие вопросы — это поможет закрепить изученный материал:
+	- что такое раннер и для чего он используется?
+	- каким образом можно управлять раннером?
+	- перечислите возможные меры безопасности по управлению раннером?
 
-Для использования докера в качестве раннеров, нужно иметь запущенный на компьютере докер, и выполнить неколько простых команд:
 
-`docker pull gitlab/gitlab-runner`
+## Информация о сроках, формате сдачи задания и критериях оценивания
 
-`docker run -d --name gitlab-runner --restart always  -v /Users/Shared/gitlab-runner/config:/etc/gitlab-runner  -v /var/run/docker.sock:/var/run/docker.sock gitlab/gitlab-runner:latest`
+**Срок выполнения задания:** не более 5 дней с момента открытия задания.
 
-`docker run --rm -it -v /Users/shared/gitlab-runner/config:/etc/gitlab-runner gitlab/gitlab-runner register`
+**Срок доработки задания:** не более 3 дней.
 
-При регистрации будут поля для заполнения (в командной строке после запуска последней команды): `GitLab instance URL` - https://gitlab.com `registration token` который отображается на странице регистрации раннера
-`Enter a name for the runner` - название раннера (любое) `Enter an executor:` - просто указать docker `default Docker image` - указываем стандартный образ python
+**Формат сдачи задания:** продемонстрировать успешную сборку проекта в пайплайне (приложить скриншоты). Скриншоты вы можете загрузить на Яндекс диск, Google диск. Не забудьте открыть доступ для просмотра.
 
-
-12\. Зайдите в пункт меню `Build — Pipelines` и нажмите на кнопку `Run Pipeline`.
-
-![pipeline](https://github.com/netology-code/ibweb-homeworks/assets/138114803/584d0fbe-3da9-4273-b1b4-839ed33ccf76)
-
-13\. На странице снова нажмите на кнопку `Run Pipeline`.
-
-![run_pipeline](https://github.com/netology-code/ibweb-homeworks/assets/138114803/4ce286bc-d467-484f-9fd1-90da17829656)
-
-14\. Дождитесь окончания процесса анализа.
-
-![13_inprogress](https://github.com/netology-code/ibweb-homeworks/assets/138114803/133df17c-a780-431c-98ba-e2e110c0ab0f)
-
-![13_finished](https://github.com/netology-code/ibweb-homeworks/assets/138114803/f83d002d-b6ad-497d-80b5-7e422f9f28b4)
-
-**Примечание.** В списке задач вы увидите упавшую задачу с `retire-js`. Это нормально.
-
-![failed-jobs](https://github.com/netology-code/ibweb-homeworks/assets/138114803/c06b87ae-6938-4b5f-85c1-0e3576b210c0)
-
-![retirejs](https://github.com/netology-code/ibweb-homeworks/assets/138114803/8962d9e9-3379-4678-be4a-57f4a271d3fd)
-
-15\. Перейдите в раздел `Security & Compliance`.
-
-![14](https://github.com/netology-code/ibweb-homeworks/assets/138114803/db101ba4-3f57-4915-83a8-11bdad619f5a)
-
-16\. Изучите внимательно разделы:
-
-- Vulnerability Report — отчёт об уязвимостях;
-- Dependency List;
-- License Compliance.
-
-### Ответьте на вопросы:
-
-**Важно**: после окончания проверки подождите пару минут и несколько раз обновите страницу через `Shift` + `F5`. Иногда не все данные по проверкам подтягиваются сразу. Убедитесь, что уязвимости точно найдены для приложения, зависимостей и контейнера.
-
-**Вопросы для домашнего задания** 
-
-1\. Сколько уязвимостей и какого уровня значимости найдено (Severity)?
-
-![vulnerabilities](https://github.com/netology-code/ibweb-homeworks/assets/138114803/260031a1-4260-4f56-b743-0ffc5f4cb89e)
-
-2\. Сколько из них:
-- в самом приложении (SAST);
-- в контейнерах (Container Scanning);
-- в зависимостях (Dependency Scanning);
-- секретов (Secret Detection)?
-
-3\. Какая уязвимость найдена в самом приложении?
-4\. Сколько зависимостей в приложении?
-5\. Сколько различного рода лицензий используется в приложении и его зависимостях?
-
-### Решение задания
-
-Пришлите в личном кабинете ответы на вопросы из раздела «Ответьте на следующие вопросы» и скриншот статистики со всеми найденными уязвимостями. Нужны только числа в секциях `Critical`, `High`, `Medium`, `Low`.
-
-Не удаляйте свою учётную запись после завершения работы. Она вам понадобится на следующей лекции.
+**Критерии оценивания:** 
+1. Зачёт: даны ответы на вопросы из п. 3 «Важных указаний при выполнении работы», а также приложены скриншоты, подтверждающие успешную сборку проекта в пайплайне.
+2. Доработка: отсутствуют ответы, скриншоты или не открыт доступ к просмотру скриншотов на диске. 
+3. Незачёт: отсутствуют ответы и скриншоты. Такой вид оценки используется крайне редко. При этом обратите внимание, что домашнее задание является необязательным. Его выполнение не повлияет на получение зачёта по модулю.
 
 
