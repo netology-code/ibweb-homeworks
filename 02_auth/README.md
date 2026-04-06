@@ -54,7 +54,8 @@ openssl req -in server.csr -text -verify -noout
 6\. Подпишите запрос и выдайте сертификат серверу.
 
 ```shell
-openssl x509 -req -sha256 -days 4096 -in server.csr -CA ca.crt -CAkey ca.key -set_serial 01 -out server.crt -extfile <(printf "subjectAltName=DNS:netology.local")
+echo "subjectAltName=DNS:netology.local" > req.out
+openssl x509 -req -sha256 -days 4096 -in server.csr -CA ca.crt -CAkey ca.key -set_serial 01 -out server.crt -extfile req.out
 ```
 
 7\. Создайте ключ и запрос на подпись сертификата для каждого клиента. 
